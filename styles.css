@@ -1,0 +1,132 @@
+/* -------------------------------
+   Global Page Styles
+---------------------------------- */
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: "Poppins", sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove Streamlit’s default padding */
+.block-container {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+/* Center text globally */
+center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------------------------------
+   Box and Text Styling
+---------------------------------- */
+.box {
+    background: #ffffffd9;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    width: 85%;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.Text {
+    text-align: center;
+}
+
+.Text h5 {
+    font-size: 1.4rem;
+    color: #0077b6;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.Text h3 {
+    font-size: 1.8rem;
+    color: #023e8a;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.Text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+
+/* -------------------------------
+   Links
+---------------------------------- */
+.Text a {
+    text-decoration: none;
+}
+
+.Text a p {
+    color: #0096c7;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.Text a p:hover {
+    color: #00b4d8;
+}
+
+/* -------------------------------
+   Image & Video Styling
+---------------------------------- */
+img, video {
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+/* -------------------------------
+   Footer
+---------------------------------- */
+.footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.footer a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: #00b4d8;
+}
+
+/* -------------------------------
+   Responsive Design
+---------------------------------- */
+@media (max-width: 768px) {
+    .box {
+        width: 95%;
+        padding: 1.8rem;
+    }
+
+    .Text h3 {
+        font-size: 1.4rem;
+    }
+
+    .Text p {
+        font-size: 0.95rem;
+    }
+}
